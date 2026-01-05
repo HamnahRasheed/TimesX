@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homePage"
+    android:background="@color/mint">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        android:layout_marginTop="20dp"
+        app:layout_anchor="@+id/fragment_container"
+        app:layout_anchorGravity="center">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/skin"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/navy"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="30dp" />
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/userprofile"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="30dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/Idnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_page"
+                android:layout_marginTop="90dp"
+                android:layout_marginHorizontal="10dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/navy"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/softgray">
+
+                    <ImageView
+                        android:id="@+id/HImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/high_score"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:id="@+id/HText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/navy"
+                        android:text="@string/high_score"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColor="@color/navy" />
+
+                    <TextView
+                        android:id="@+id/Hscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/score"
+                        android:textColor="@color/navy"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true" >
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/softgray">
+
+                    <ImageView
+                        android:id="@+id/GWImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/games_won"
+                        android:layout_marginTop="10dp"
+
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:id="@+id/playScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/games_won"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:textColor="@color/charcoal" />
+                    <TextView
+                        android:id="@+id/GWText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/score"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/charcoal"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_marginBottom="170dp"
+            android:layout_gravity="center"
+            tools:ignore="ExtraText">
+            <!-- 1.adding adapter view -->
+
+            <ListView
+                android:id="@+id/gameTypes"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/offwhite"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

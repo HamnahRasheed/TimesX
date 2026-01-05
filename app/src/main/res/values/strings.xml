@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TimesX</string>
+    <string name="Guest_Account">Continue as Guest User</string>
+    <string name="userName">Email address or Username:</string>
+    <string name="password">Password:</string>
+    <string name="Name">Name</string>
+    <string name="forgotPass">Forgotten Password?</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="signup1">Dont have an account?</string>
+    <string name="forgot_password_screen">Forgot Password</string>
+    <string name="form1">Fill up the form to reset the password</string>
+    <string name="fillform">Enter Email Address:</string>
+    <string name="resetPass">Reset Password</string>
+    <string name="newpassword">Confirm Password:</string>
+    <string name="signup">SignUp</string>
+    <string name="plz_signup">Please Signup to continue.</string>
+    <string name="having_account">Already have an account?</string>
+    <string name="welcome_page">Welcome </string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="user">User</string>
+    <string name="exit">Exit</string>
+    <string name="new_game">New Game</string>
+
+    <string-array name="game_type_array">
+        <item>Catch 2x</item>
+        <item>Catch 3x</item>
+        <item>Catch 4x</item>
+    </string-array>
+
+    <string name="exploreItem">Explore</string>
+    <string name="time_breaker">Time Breaker</string>
+    <string name="score_chase">Score Chase</string>
+    <string name="play">Play</string>
+    <string name="profile">User Profile</string>
+    <string name="score">0</string>
+    <string name="high_score">High Score</string>
+    <string name="games_won">Games Won</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

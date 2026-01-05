@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Blue">#9cc6db</color>
+    <color name="skin">#ddba7d</color>
+    <color name="offwhite">#fcf6d9</color>
+    <color name="orange">#cf4b00</color>
+    <color name="lilac">#E9E5FF</color>
+    <color name="navy">#0F1A2A</color>
+    <color name="mint">#DFF7F3</color>
+    <color name="charcoal">#1E1E1E</color>
+    <color name="softgray">#F5F5F5</color>
+    <color name="darkTeal">#0F5952</color>
+    <color name="peach">#FFE5C4</color>
+</resources>
