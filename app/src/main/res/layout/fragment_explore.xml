@@ -57,7 +57,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/hour_glass"
+                        android:src="@drawable/hourglass"
                         android:scaleType="fitCenter"
                         android:adjustViewBounds="true" />
                     <TextView

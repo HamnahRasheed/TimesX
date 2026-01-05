@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -41,7 +42,7 @@ public class HomeFragment extends Fragment {
         //games=getResources().getStringArray(R.array.game_type_array);
 
         //3.creating adapter
-        ArrayAdapter<String> gtype = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, games);
+        ArrayAdapter<String> gtype = new ArrayAdapter<>(requireContext(),  R.layout.list_item_text_color, R.id.textItem,games);
 
         //4. getting reference to adapter view
         ListView listView = (ListView) view.findViewById(R.id.gameTypes);
@@ -58,9 +59,10 @@ public class HomeFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(), "Starting " + games[position], Toast.LENGTH_SHORT).show();
                 if (listView.getVisibility() == View.VISIBLE) {
-                    Intent intent = new Intent(requireContext(), Game.class);
-                    intent.putExtra("v1", String.valueOf(position));
+                    Intent intent = new Intent(getActivity(), GameActivity.class);
+                    intent.putExtra("gameName", games[position]);
                     listView.setVisibility(View.GONE);
                     startActivity(intent);
                 } else {

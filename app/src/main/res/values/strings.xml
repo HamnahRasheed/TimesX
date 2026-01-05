@@ -39,4 +39,7 @@
     <string name="games_won">Games Won</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scoreCount">Score:</string>
+    <string name="gameName">Catch 2X</string>
+    <string name="damageCount">Damage: 0/10</string>
 </resources>
